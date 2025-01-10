@@ -1,2 +1,2 @@
 # projeto-social
- Projeto redes sociais
+ Projeto Redes Sociais
