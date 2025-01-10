@@ -12,22 +12,30 @@ html, body {
 }
 
 body {
-    background: url("../imagens/fundo-madeira.jpg") no-repeat top center;
-    background-size: cover; /*PARA A IMAGEM FICAR DO TAMANHO DELA CORRETAMENTE, MOSTRAR A IMAGEM POR COMPLETO*/
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; /*PARA A IMAGEM FICAR DO TAMANHO DELA CORRETAMENTE. MOSTRAR A IMAGEM POR COMPLETO*/
     background-attachment: fixed; /*CASO AJÁ BARRA DE ROLAGEM. REMOVERÁ A BARRA DE ROLAGEM CASO TENHA. FICANDO FIXO*/
 }
 
 main {
-    position: relative; /*PARA AJUDAR A CENTRALIZAR O TELEFONE NO POSITION ABSOLUTE NA SECTION#TELEFONE*/
+    position: relative; /*A IMAGEM FICARA FIXA E CONSEGUIRA AUMENTAR E DIMINUIR SEM ELA SAIR DO LOCAL DESEJADO. PARA MOVIMENTAR DE POSIÇÃO USAR O POSITION:ABSOLUTE*/
     height: 100vh; /*ALTURA TOTAL*/
 }
 
 section#telefone {
-    position: absolute; /*PARA POSICIONAR A IMAGEM ONDE QUISER*/
+    position: absolute; /*PARA POSICIONAR A IMAGEM ONDE QUISER EM QUAQUER CANTO DO SITE*/
     top: 50%; /*TOPO*/
     left: 50%; /*ESQUERDA*/
     transform: translate(-50%, -50%); /*JUNTO COM TOP E LEFT, A IMAGEM FICARA NO CENTRO DA TELA NÃ IMPROTA O TAMANHO DA TELA*/
     height: 627px; /*ALTURA*/
     width: 311px; /*LARGURA*/
-    background: url("../imagens/frame-iphone.png") no-repeat;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela { /*PARA POSICIONAR A IMAGEM QUE ESTÁ NO IFRAME QUE VEIO DO HOME.HTML*/
+    position: relative; /*A IMAGEM FICARA FIXA E CONSEGUIRA AUMENTAR E DIMINUIR SEM ELA SAIR DO LOCAL DESEJADO. PARA MOVIMENTAR DE POSIÇÃO USAR O POSITION:ABSOLUTE*/
+    top: 80px; /*TOPO*/
+    left: 22px; /*ESQUERDA*/
+    width: 269px; /*LARGURA*/ 
+    height: 471px; /*ALTURA*/
 }
