@@ -39,3 +39,24 @@ iframe#tela { /*PARA POSICIONAR A IMAGEM QUE ESTÁ NO IFRAME QUE VEIO DO HOME.HT
     width: 269px; /*LARGURA*/ 
     height: 471px; /*ALTURA*/
 }
+/*IMAGENS DA LOGO DIRECIONADO*/
+section#redes-sociais {
+    display: flex; /*PARA PODER MOVIMENTAR AS IMAGENS*/
+    flex-direction: column; /*IMAGENS FICAR EM COLUNA*/
+    text-align: right; /*FICAR A ESQUEDA*/
+}
+/*IMAGENS DA LOGO*/
+section#redes-sociais img {
+    width: 50px; /*TAMANHO DAS IMAGENS*/
+    margin: 10px;/*ESPAÇAMENTO ENTRE AS IMAGENS*/
+    border-radius: 50%; /*AREDONDAMENTO NAS IMAGENS QUADRADAS*/
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);/*LEVE BORDA EM VOLTA DOS MENUS*/
+    box-sizing: border-box; /*PARA OS BOTÕES NÃO SE MECHEREM AO PASSAR O MOUSE POR CIMA AO CRIAR O EFEITO :HOVER ABAIXO. A BORDA PASSA A FAZER PARTE DA CAIXA COM ESTÁ CONFIGURAÇÃO*/ 
+}
+
+/*CRIAÇÃO DO EFEITO NOS BOTÕES AO PASSAR O MOUSE POR CIMA*/
+section#redes-sociais img:hover {
+    border: 2px solid rgb(255, 255, 255, 0.637); /*EFEITO DA BORDA DA IMAGEM*/
+    transform: translate(-3px -3px); /*MOVIMENTAÇÃO DO BOTÃO LEVEMENTE AO PASSAR O MOUSE POR CIMA*/
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.620);/*LEVE BORDA EM VOLTA DOS MENUS*/
+}
