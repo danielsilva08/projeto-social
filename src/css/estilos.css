@@ -58,5 +58,6 @@ section#redes-sociais img {
 section#redes-sociais img:hover {
     border: 2px solid rgb(255, 255, 255, 0.637); /*EFEITO DA BORDA DA IMAGEM*/
     transform: translate(-3px -3px); /*MOVIMENTAÇÃO DO BOTÃO LEVEMENTE AO PASSAR O MOUSE POR CIMA*/
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.620);/*LEVE BORDA EM VOLTA DOS MENUS*/
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.623);/*LEVE BORDA EM VOLTA DOS MENUS*/
+    transition: transform .1s, border 1s; /*LEVARA 1S PARA APAECER O EFEITO AO PASSAR O MOUSE E A COR BRANCA DA BORDA 1S*/
 }
